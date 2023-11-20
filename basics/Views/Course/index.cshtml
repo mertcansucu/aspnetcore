@@ -1,0 +1,23 @@
+@model Course
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>course index page</h1>
+    <p>
+        @Model.Id 
+        <!--modelde oluşturduğum veritabanını coursecontroller içinde bıraya dinamik veri yollayıp burda ekrana yazdırdım -->
+    </p>
+    <p>
+        @Model.Title
+    </p>
+</body>
+</html>

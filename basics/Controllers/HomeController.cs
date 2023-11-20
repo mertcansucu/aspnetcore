@@ -30,14 +30,14 @@ public IActionResult Index()// dotnet watch run bu komutla direk burası çalı�
         return View();
     }
 */
-    public string Index()// dotnet watch run bu komutla direk burası çalıştı ve sayfaya gidiş sağlandı
+    public IActionResult Index()// dotnet watch run bu komutla direk burası çalıştı ve sayfaya gidiş sağlandı
     {
-        return "home/index";
+        return View();
     }
 
-    public string Contact()
+    public IActionResult Contact()
     {
-        return "home/contact";
+        return View();
     }
 
     /*
