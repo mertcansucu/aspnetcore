@@ -26,7 +26,7 @@ app.Run(); kısmı.
        course.Id = 1;
        course.Title = "Aspnet core kursu";
        course.Description = "Güzel bir kurs";
-       course.Image = "1.jpg";
+       course.Image = "4.jpg";
 
        return View(course);//dinamik olarak veriyi alıp tasarım ekranımda kullanmak için yaptım
     }

@@ -1,67 +1,18 @@
 @model List<Course>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-            <div class="container">
-              <a class="navbar-brand" href="#">CourseApp</a>
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Courses</a>
-                </li>
-              </ul>
-              
+@foreach(var kurs in Model){
+    <div class="card mb-3" id="kurs_@kurs.Id">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="~/img/@kurs.Image" class="img-fluid rounded-start" alt="">
             </div>
-        </nav>
-    </header>
-    <div class="container mt-3">
-        <main>
-            @foreach(var kurs in Model){
-                <div class="card mb-3" id="kurs_@kurs.Id">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="~/img/@kurs.Image" class="img-fluid rounded-start" alt="">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5>@kurs.Title</h5>
-                                <p>@kurs.Description</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">@kurs.Title</h5>
+                    <p class="card-text">@kurs.Description</p>
                 </div>
-            }
-            
-            <!-- oluşturduğum bu yapıyı daha düzgün bir şekilde üste bootstrap ile birleştirdim
-                @foreach(var kurs in Model){
-                <div id="kurs_@kurs.Id">
-                    <h2>@kurs.Title</h2>
-                    <p>@kurs.Description</p>
-                    <img src="~/img/@kurs.Image" alt="">
-                </div>
-            }
-            -->
-        </main>
+            </div>
+        </div>
     </div>
-    <h1>course list</h1>
-
-    <!--
-        @Model[0].Title  böyle yapıp teker teker çağırmak yerine döngü ile eklediğim yeni bilgiler otomatik getirdim altta
-        @Model[1].Title
-    -->
-
-   
-
-</body>
-</html>
+    
+}
