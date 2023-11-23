@@ -11,7 +11,11 @@ namespace basics.Models
         prop+enter --> public int MyProperty { get; set; }
         */
         public int Id { get; set; }
- 
+
         public string? Title { get; set; }//string? ? koymamın nedeni string boş girilme durumu için
+
+        public string? Image { get; set; }
+
+        public string? Description { get; set; }//string? ? koymamın nedeni string boş girilme durumu için
     }
 }

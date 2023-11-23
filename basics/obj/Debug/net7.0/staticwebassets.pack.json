@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Mert Can SUCU\\OneDrive - Ataturk University\\Masaüstü\\aspnetcore\\basics\\wwwroot\\img\\fb.jpg",
+      "PackagePath": "staticwebassets\\img\\fb.jpg"
+    },
+    {
       "Id": "C:\\Users\\Mert Can SUCU\\OneDrive - Ataturk University\\Masaüstü\\aspnetcore\\basics\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

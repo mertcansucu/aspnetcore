@@ -25,6 +25,8 @@ app.Run(); kısmı.
 
        course.Id = 1;
        course.Title = "Aspnet core kursu";
+       course.Description = "Güzel bir kurs";
+       course.Image = "1.jpg";
 
        return View(course);//dinamik olarak veriyi alıp tasarım ekranımda kullanmak için yaptım
     }
@@ -38,7 +40,16 @@ app.Run(); kısmı.
 
     */
     public IActionResult List(){
-        return View();
+        var kurslar = new List<Course>(){//böyle yapmamın nedeni üste sadece bir veri göndermek için vardı artık birden fazla veriyi göstermek için yaptım
+            new Course() {Id = 1, Title = "aspnet kursu", Description = "Güzel bir kurs", Image = "1.jpg"},
+            new Course() {Id = 2, Title = "php kursu", Description = "Güzel bir kurs", Image = "2.jpg"},
+            new Course() {Id = 4, Title = "javascript kursu", Description = "Güzel bir kurs", Image = "3.jpg"},
+            new Course() {Id = 3, Title = "django kursu", Description = "Güzel bir kurs", Image = "4.jpg"},
+            
+
+
+        };
+        return View("CourseList", kurslar);
         //return View("CourseList"); bunu mesela ben başka isimdeki yani :public IActionResult List() değilde başka bir view dödermek istersem böyle yaparım
     }
 }

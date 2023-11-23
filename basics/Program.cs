@@ -14,7 +14,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseStaticFiles();//resim klasörünü başka bir dizin altında kullanmak istersem ekstradan eklemem gerekiyor bunu da app.UseStaticFiles(); diye aratırsan .netin kendi stesinde anlatıyor ya da videolardan staticfiles kısmına bak
 
 app.UseRouting();
 

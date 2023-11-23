@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yz01OVseZMl3SGu0jcQhVYvNwApnxB+lGQ2zNS8HDLk=",
+  "Hash": "f0/Vtd0aRmBDZFOPFy113cnk5sNVg3WxBH2HndCOOSc=",
   "Source": "basics",
   "BasePath": "_content/basics",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Mert Can SUCU\\OneDrive - Ataturk University\\Masaüstü\\aspnetcore\\basics\\wwwroot\\img\\fb.jpg",
+      "SourceId": "basics",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mert Can SUCU\\OneDrive - Ataturk University\\Masaüstü\\aspnetcore\\basics\\wwwroot\\",
+      "BasePath": "_content/basics",
+      "RelativePath": "img/fb.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\fb.jpg"
     },
     {
       "Identity": "C:\\Users\\Mert Can SUCU\\OneDrive - Ataturk University\\Masaüstü\\aspnetcore\\basics\\wwwroot\\js\\site.js",
