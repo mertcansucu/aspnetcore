@@ -17,5 +17,8 @@ namespace basics.Models
         public string? Image { get; set; }
 
         public string? Description { get; set; }//string? ? koymamın nedeni string boş girilme durumu için
+        public string[]? Tags { get; set; }
+        public bool isActive { get; set; }
+        public bool isHome { get; set; }
     }
 }

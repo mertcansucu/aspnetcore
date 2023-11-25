@@ -4,25 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--bunu yapmamın nedeni ben sayfalara özel stil oluşturmak istersem böyle yapmam lazım-->
+    @RenderSection("Styles",false)
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-            <div class="container">
-              <a class="navbar-brand" href="#">CourseApp</a>
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Courses</a>
-                </li>
-              </ul>
-              
-            </div>
-        </nav>
+        @await Html.PartialAsync("_Navbar") <!--partial views yaptım--> 
+
+        <!--altta section yaptım çünkü ben renderbody ile yaptığım için herşey main altına gidiyor ama bazen ben header altında yeni bir şey eklemek istersem böyle yapmam lazım ayrıca false yapmamın needeni istediğim sayfada sadece olsun diye yoksa her sayfaya eklemek ister ben bunu home altında index için ekledim-->
+        @RenderSection("Header", false)
     </header>
     <div class="container mt-3">
         <main>

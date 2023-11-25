@@ -32,7 +32,7 @@ public IActionResult Index()// dotnet watch run bu komutla direk burası çalı�
 */
     public IActionResult Index()// dotnet watch run bu komutla direk burası çalıştı ve sayfaya gidiş sağlandı
     {
-        return View();
+        return View(Repository.Courses);
     }
 
     public IActionResult Contact()
